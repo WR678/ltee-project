@@ -20,8 +20,9 @@ papermill = ">=2.6"   # Quarto needs it for report parameters (-P)
 [tasks]
 check = { cmd = "python --version && quarto --version", description = "Check that the tools work" }
 download = { cmd = "python scripts/download_data.py", description = "Download the raw data and verify checksums" }
+report = { cmd = "quarto render reports/ltee-report.qmd", depends-on = ["download"], description = "Render the Quarto report" }
 # `reproduce` must rebuild every result from the raw data with one command.
-reproduce =[{ task = "qc" }, { task = "variant-calling" }]
+reproduce = [{ task = "qc" }, { task = "variant-calling" }, { task = "report" }]
 
 [feature.pipeline]
 platforms = ["linux-64", "osx-arm64", "osx-64"]
