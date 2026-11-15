@@ -77,3 +77,9 @@ Practice project from the Reproducible and Open Science lessons.
 ## Get the data
 
     pixi exec python scripts/download_data.py
+
+## Container
+
+Docker image built from pixi.lock: `docker build --platform linux/amd64 -f containers/Dockerfile --build-arg ENV_NAME=pipeline -t ltee-project:0.1.0 .`
+
+The variant calls in `results/` were produced with the image `ltee-project:0.1.0`, image ID `sha256:38d3278bb392f66928df57dccc18fadd22d6daf7dde46c0f38cfcb58f1abb2a5`, built on 2026-11-11 from `pixi.lock` at commit 3a11dd5. Run the pipeline in it with `docker run --rm --platform linux/amd64 -v "$PWD":/work -w /work ltee-project:0.1.0 bash scripts/run_variant_calling.sh`.
