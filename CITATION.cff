@@ -8,10 +8,11 @@ authors:
     family-names: "Wang"
     email: "Wang.Rui@mbzuai.ac.ae"
     orcid: "https://orcid.org/0009-0008-5273-0060"
+    affiliation: "Mohamed bin Zayed University of Artificial Intelligence"
 repository-code: "https://github.com/WR678/ltee-project"
 license: MIT
-version: 0.1.0
-date-released: "2026-11-18"
+version: 1.0.0
+date-released: "2026-11-25"
 keywords:
   - reproducibility
   - variant calling
