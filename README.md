@@ -1,5 +1,7 @@
 # LTEE variant calling
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24535626.svg)](https://doi.org/10.5281/zenodo.24535626)
+
 Variant calling on three *E. coli* clones from population Ara-3 of Richard
 Lenski's Long-Term Evolution Experiment (LTEE), frozen at 5,000, 15,000 and
 50,000 generations. Question: how many mutations accumulated, and is the
@@ -89,8 +91,9 @@ CC0). The reference genome is *E. coli* B str. REL606, GenBank CP000819.1
 `metadata/sources.tsv` and checks it against `metadata/checksums.sha256`.
 Derived data and results are not distributed: they are regenerated from the
 raw data by the code in this repository. Code and environment:
-<https://github.com/WR678/ltee-project> (MIT); a Zenodo DOI will be added when
-the project is released.
+<https://github.com/WR678/ltee-project> (MIT). Release v1.0.0 is archived on
+Zenodo at <https://doi.org/10.5281/zenodo.24535626>; the concept DOI
+<https://doi.org/10.5281/zenodo.24535625> always points to the latest release.
 
 ## Repository contents
 
