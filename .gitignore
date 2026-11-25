@@ -25,6 +25,7 @@ work/
 /.quarto/
 reports/*.html
 reports/*_files/
+reports/*.pdf
 **/*.quarto_ipynb
 .ipynb_checkpoints/
 
@@ -32,3 +33,6 @@ reports/*_files/
 __pycache__/
 .DS_Store
 Thumbs.db
+
+# Intermediate files of docs/rulegraph.svg
+docs/*.dot
